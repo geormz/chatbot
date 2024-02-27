@@ -1,0 +1,162 @@
+{
+    "intents": [
+      {
+        "intention": "Saludo",
+        "emotion": "Neutral",
+        "comment": "Inicio de conversación",
+        "text": [
+          "Hola",
+          "Buenos días",
+          "¿Cómo estás?",
+          "Hola, ¿en qué puedo ayudarte?"
+        ],
+        "responses": [
+          "Hola. ¿Cómo te sientes hoy?",
+          "Hola. ¿En qué puedo ayudarte?"
+        ],
+        "extension": {
+          "function": "saludar_usuario",
+          "entities": false,
+          "responses": []
+        },
+        "context": {
+          "in": "",
+          "out": "SolicitudUsuarioSaludo",
+          "clear": false
+        },
+        "entityType": "NA",
+        "entities": []
+      },
+      {
+        "intention": "Desahogo",
+        "emotion": "Tristeza",
+        "comment": "Expresión de sentimientos negativos",
+        "text": [
+          "Me siento solo",
+          "Nadie me entiende",
+          "Estoy abrumado"
+        ],
+        "responses": [
+          "Lamento que te sientas así. ¿Quieres hablar al respecto?",
+          "Es normal sentirse solo a veces. Estoy aquí para escucharte."
+        ],
+        "extension": {
+          "function": "escuchar_usuario",
+          "entities": false,
+          "responses": []
+        },
+        "context": {
+          "in": "",
+          "out": "SolicitudUsuarioDesahogo",
+          "clear": false
+        },
+        "entityType": "NA",
+        "entities": []
+      },
+      {
+        "intention": "ManejoEstrés",
+        "emotion": "Ansiedad",
+        "comment": "Proporcionar técnicas de manejo del estrés",
+        "text": [
+          "Estoy muy estresado",
+          "No puedo lidiar con esta presión",
+          "Me siento abrumado por todo"
+        ],
+        "responses": [
+          "Respira profundo. ¿Quieres que te guíe a través de una técnica de relajación?",
+          "Entiendo cómo te sientes. A veces, un poco de descanso puede ayudar."
+        ],
+        "extension": {
+          "function": "proporcionar_tecnicas_manejo_estres",
+          "entities": false,
+          "responses": []
+        },
+        "context": {
+          "in": "",
+          "out": "SolicitudUsuarioManejoEstrés",
+          "clear": false
+        },
+        "entityType": "NA",
+        "entities": []
+      },
+      {
+        "intention": "Motivación",
+        "emotion": "Desmotivación",
+        "comment": "Ofrecer apoyo y estímulo",
+        "text": [
+          "No tengo motivación para hacer nada",
+          "Todo parece demasiado difícil",
+          "Nada tiene sentido"
+        ],
+        "responses": [
+          "Recuerda tus logros pasados y lo lejos que has llegado. Eres capaz de superar esto.",
+          "Cada paso pequeño es un paso hacia adelante. Estoy aquí para apoyarte en tu camino."
+        ],
+        "extension": {
+          "function": "motivar_usuario",
+          "entities": false,
+          "responses": []
+        },
+        "context": {
+          "in": "",
+          "out": "SolicitudUsuarioMotivación",
+          "clear": false
+        },
+        "entityType": "NA",
+        "entities": []
+      },
+      {
+        "intention": "Agradecimiento",
+        "emotion": "Gratitud",
+        "comment": "Expresar agradecimiento",
+        "text": [
+          "Gracias por estar aquí",
+          "Te agradezco tu ayuda",
+          "Estoy agradecido por tu apoyo"
+        ],
+        "responses": [
+          "De nada. Estoy aquí para ti siempre que lo necesites.",
+          "No hay problema. Siempre es un placer ayudar."
+        ],
+        "extension": {
+          "function": "responder_agradecimiento",
+          "entities": false,
+          "responses": []
+        },
+        "context": {
+          "in": "",
+          "out": "SolicitudUsuarioAgradecimiento",
+          "clear": false
+        },
+        "entityType": "NA",
+        "entities": []
+      },
+      {
+        "intention": "Despedida",
+        "emotion": "Neutral",
+        "comment": "Finalización de la conversación",
+        "text": [
+          "Adiós",
+          "Hasta luego",
+          "Nos vemos"
+        ],
+        "responses": [
+          "Adiós. No dudes en volver si necesitas más apoyo emocional.",
+          "Hasta luego. Cuídate."
+        ],
+        "extension": {
+          "function": "decir_adiós",
+          "entities": false,
+          "responses": []
+        },
+        "context": {
+          "in": "",
+          "out": "SolicitudUsuarioDespedida",
+          "clear": false
+        },
+        "entityType": "NA",
+        "entities": []
+      }
+    ]
+  }
+  
